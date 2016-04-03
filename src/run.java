@@ -8,11 +8,12 @@ public class run
 	public static void main(String[] args) {
 		System.out.println("Hello World!");
 		execute("test.txt");
+		vm v1 = new vm();
 	}
 
 	public static void execute(String fileName)
 	{
-		String line = null;
+		String line;
 
 		try{
 			FileReader fileReader = new FileReader(fileName);
